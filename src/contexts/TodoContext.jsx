@@ -3,7 +3,8 @@ import React, { useState, createContext } from 'react';
 export const TodoContext = createContext();
 
 const TodoProvider = ({ children }) => {
- const [ todos, setTodos ] = useState ([
+ 
+  const [ todos, setTodos ] = useState ([
   { id: 1, title: 'Ir ao supermercado', done: false },
   { id: 2, title: 'Ir para academia', done: false },
   { id: 3, title: 'Passear com cachorro ', done: false },
